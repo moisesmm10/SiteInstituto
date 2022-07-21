@@ -1,8 +1,10 @@
 body,
 ul {
+  background: #e7e7e7;
   margin: 0px;
   padding: 0px;
 }
+
 
 a {
   color: black;
@@ -15,8 +17,13 @@ a:hover {
 }
 
 #logo {
-  font-size: 1.5rem;
-  font-weight: bold;
+    
+    font-style: italic;
+    font-size: 2.2em;
+    color: green;
+    font-family: arial, bold;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.199);
+    
 }
 
 #header {
@@ -27,9 +34,14 @@ a:hover {
   align-items: center;
   justify-content: space-between;
   background: #e7e7e7;
+  
+  
 }
 
 #menu {
+    font-size: 1.2em;
+  color: green;
+  font-family: arial, bold;
   display: flex;
   list-style: none;
   gap: 0.5rem;
@@ -42,6 +54,96 @@ a:hover {
 
 #btn-mobile {
   display: none;
+}
+main {
+    margin: auto;
+    min-width: 280px;
+    max-width: 1080px;
+    padding: 10px;
+    background-color: var(--cor0);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.534);
+    margin-bottom: 50px;
+    border-radius: 10px;
+}
+#artigo1 {
+    margin: auto;
+    float: left;
+    width: 350px;
+}
+main p {
+    text-align: justify;
+    margin-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+main h1 {
+    margin-top: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    text-align: center;
+}
+.galeria-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 2vw;
+    padding: 0 2vw;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+.galeria-items{
+    width: 350px;
+    height: 350px;
+    border: 10px solid #FFF;
+    box-shadow: 5px 5px 5px #0006;
+    flex-grow: 1;
+    transition: transform .5s linear;
+    border-radius: 10px;
+}
+.galeria-items img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.galeria-items:hover{
+    transform: scale(1.3);
+}
+
+.btn-whatsapp {
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    background: #34af23;
+    color: #FFF;
+    font-size: 1.5em;
+    border: 1px solid #fff;
+    animation: pulsar 0.8s ease-out 1s infinite alternate none running;
+}
+a {
+    color: inherit;
+}
+@keyframes pulsar {
+    0% {
+        height: 40px;
+        width: 40px;
+    }
+    100% {
+        height: 50px;
+        width: 50px;
+    }
+}
+footer {
+    flex-shrink: 0;
+    padding: 10px;
+    font-size: 0.8em;
+    text-align: center;
+    background-image: linear-gradient( #FFF, rgba(0, 0, 0, 0.082));
+    color:black;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 @media (max-width: 600px) {

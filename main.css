@@ -166,8 +166,18 @@ footer {
     overflow-y: hidden;
   }
   #artigo1 {
+    align-items: center;
     width: 280px;
-
+  }
+  #logo {
+    text-align: center;
+    font-size: 1.5em;
+  }
+  main h1 {
+    font-size: 1.5em;
+  }
+  main h2 {
+    font-size: 1.3em;
   }
   #nav.active #menu {
     height: calc(100vh - 70px);
